@@ -35,7 +35,7 @@ const fadeUp = {
   transition: { duration: 0.6, ease: "easeOut" },
 };
 
-function cn(...classes) {
+function cn(...classes: Array<string | number | boolean | null | undefined>) {
   return classes.filter(Boolean).join(" ");
 }
 
