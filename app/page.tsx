@@ -39,7 +39,7 @@ function cn(...classes: Array<string | number | boolean | null | undefined>) {
   return classes.filter(Boolean).join(" ");
 }
 
-function Pill({ icon: Icon, title, desc }) {
+function Pill({ icon: Icon, title, desc }: { icon: any; title: string; desc: string }) {
   return (
     <div className="flex items-start gap-3">
       <div className="mt-1 rounded-2xl border bg-white/60 p-2 shadow-sm backdrop-blur">
