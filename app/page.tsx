@@ -53,7 +53,7 @@ function Pill({ icon: Icon, title, desc }: { icon: any; title: string; desc: str
   );
 }
 
-function Stat({ value, label }) {
+function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-2xl border bg-white/60 p-4 shadow-sm backdrop-blur">
       <div className="text-2xl font-semibold tracking-tight">{value}</div>
@@ -62,7 +62,7 @@ function Stat({ value, label }) {
   );
 }
 
-function Feature({ title, items }) {
+function Feature({ title, items }: { title: string; items: string[] }) {
   return (
     <Card className="rounded-2xl">
       <CardHeader>
@@ -80,7 +80,7 @@ function Feature({ title, items }) {
   );
 }
 
-function Testimonial({ name, meta, quote, rating = 5 }) {
+function Testimonial({ name, meta, quote, rating = 5 }: { name: string; meta: string; quote: string; rating?: number }) {
   return (
     <Card className="rounded-2xl h-full flex flex-col">
       <CardContent className="pt-6 flex-1 flex flex-col">
@@ -99,7 +99,7 @@ function Testimonial({ name, meta, quote, rating = 5 }) {
   );
 }
 
-function FAQItem({ q, a }) {
+function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
     <button
