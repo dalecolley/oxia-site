@@ -30,9 +30,9 @@ import { Separator } from "@/components/ui/separator";
 const HERO_ART = "/PINK1.webp";
 
 const fadeUp = {
-  initial: { opacity: 0, y: 14 },
+  initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" },
+  transition: { duration: 0.6 }
 };
 
 function cn(...classes: Array<string | number | boolean | null | undefined>) {
