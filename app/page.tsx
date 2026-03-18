@@ -530,22 +530,27 @@ const pricing = useMemo(
 
           <div className="grid gap-4 md:grid-cols-2">
             <Card className="rounded-2xl">
-              <CardHeader>
-                <CardTitle className="text-base">Try before you buy</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex items-start gap-2 text-sm">
-                  <Check className="mt-0.5 h-4 w-4" />
-                  <div className="text-muted-foreground">Free 60g samples available</div>
+              <CardContent className="pt-6 space-y-3">
+                <div className="font-semibold text-lg">Try before you buy</div>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-start gap-2">
+                    <Check className="h-4 w-4 mt-0.5 text-foreground" />
+                    <span>Free 60g samples available</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-4 w-4 mt-0.5 text-foreground" />
+                    <span>2 washes worth</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-4 w-4 mt-0.5 text-foreground" />
+                    <span>Test it on your skin first</span>
+                  </div>
                 </div>
-                <div className="flex items-start gap-2 text-sm">
-                  <Check className="mt-0.5 h-4 w-4" />
-                  <div className="text-muted-foreground">2 washes worth</div>
-                </div>
-                <div className="flex items-start gap-2 text-sm">
-                  <Check className="mt-0.5 h-4 w-4" />
-                  <div className="text-muted-foreground">Test it on your skin first</div>
-                </div>
+                <Button asChild className="w-full rounded-2xl">
+                  <a href="https://buy.stripe.com/5kQ28q98dbwP6ME1Bm7ss02" target="_blank" rel="noopener noreferrer">
+                    Request free sample
+                  </a>
+                </Button>
               </CardContent>
             </Card>
             <Feature title="Delivery" items={["UK-wide shipping", "Local drop (selected areas)", "Tracked delivery"]} />
