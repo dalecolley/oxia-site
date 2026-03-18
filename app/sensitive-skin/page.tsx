@@ -528,8 +528,8 @@ return (
 
           <div className="space-y-2 text-sm">
             <div className="font-medium">Contact</div>
-            <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /> support@oxiawash.co.uk</div>
-            <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /> +44 (0)7xxx xxxxxx</div>
+            <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /> info@oxiawash.co.uk</div>
+            <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /> +44 (0)7305 306016</div>
             <div className="flex items-center gap-2 text-muted-foreground"><MapPin className="h-4 w-4" /> United Kingdom</div>
           </div>
 
@@ -537,13 +537,12 @@ return (
             <div className="font-medium">Learn more</div>
             <div className="space-y-1">
               <div><Link className="text-muted-foreground hover:text-foreground" href="/sensitive-skin">Sensitive skin</Link></div>
-              <div><Link className="text-muted-foreground hover:text-foreground" href="/odour">Odor removal</Link></div>
-              <div><Link className="text-muted-foreground hover:text-foreground" href="/how-to-use">How to use</Link></div>
+              <div><Link className="text-muted-foreground hover:text-foreground" href="/#pricing">Pricing</Link></div>
             </div>
             <div className="pt-2 flex gap-3 text-muted-foreground">
-              <a className="hover:text-foreground" href="#">Privacy</a>
-              <a className="hover:text-foreground" href="#">Returns</a>
-              <a className="hover:text-foreground" href="#">Terms</a>
+              <a className="hover:text-foreground" href="/privacy">Privacy</a>
+              <a className="hover:text-foreground" href="/returns">Returns</a>
+              <a className="hover:text-foreground" href="/terms">Terms</a>
             </div>
           </div>
         </div>
